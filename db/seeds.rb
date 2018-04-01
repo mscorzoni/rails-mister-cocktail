@@ -1,18 +1,15 @@
 Cocktail.destroy_all
 Ingredient.destroy_all
 
-cocktails = [
-  {
-    name: "Old Fashioned",
-    },
-  {
-    name: "Daiquiri",
-    },
-  {
-    name: "Margarita",
-    }
-  
-]
+marguerita = Cocktail.new(name: "Marguerita")
+marguerita.save
 
-ingredients = %w(lemon ice mint leaves redbull jagermeister sugar tonic gin rhum)
+blood_mary = Cocktail.new(name: "Blood Mary")
+blood_mary.save
 
+caipirinha = Cocktail.new(name: "Caipirinha")
+caipirinha.save
+
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
